@@ -30,10 +30,14 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: "http://localhost:1337",
+        apiURL: "https://buscandomariposas-backend.herokuapp.com",
         contentTypes: [
-          // Lista de tipos de contenido que tenemos en Strapi, en singular
-          "butterfly"
+          "butterfly",
+          "color",
+          "detail",
+          "region",
+          "reference",
+          "size"
         ],
         queryLimit: 1000,
       },
